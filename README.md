@@ -8,10 +8,10 @@ Each command Reference
 
 ### httpd.fsx
 
-#### summary
+#### summary / 概要
 
-Start small http daemon.  
-It only can respond static file contents.
+Start small http daemon. It only can respond static file contents.  
+小さな http サーバを立ち上げます。静的ファイルコンテンツを返すことができるのみです。
 
 #### usage / 使い方
 
