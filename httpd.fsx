@@ -23,7 +23,7 @@ let run = fun (root, port, host) ->
     // define main loop to process the request from http clinet such as web browser.
     let rec procreq ():(unit->unit) = 
         let context = listener.GetContext ()
-        let url = context.Request.RawUrl.TrimStart('/')
+        let url = context.Request.Url.LocalPath.TrimStart('/')
         let res = context.Response
         let path = Path.Combine (root, (url.Replace("/","\\")))
         match (File.Exists path) with
